@@ -39,7 +39,7 @@ export const CallToAction = () => {
 
           style={{
             backgroundImage: `url(${starsBg.src})`,
-            bacgroundPositionY
+            
           }}
 
         >
