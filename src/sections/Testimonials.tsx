@@ -6,30 +6,31 @@ import avatar4 from "@/assets/avatar-4.png";
 
 const testimonials = [
   {
-    text: "“This product has completely transformed how I manage my projects and deadlines”",
+    text: "&ldquo;This product has completely transformed how I manage my projects and deadlines&rdquo;",  // Escaped quotes
     name: "Sophia Perez",
     title: "Director @ Quantum",
     avatarImg: avatar1,
   },
   {
-    text: "“These AI tools have completely revolutionized our SEO entire strategy overnight”",
+    text: "&ldquo;These AI tools have completely revolutionized our SEO entire strategy overnight&rdquo;",  // Escaped quotes
     name: "Jamie Lee",
     title: "Founder @ Pulse",
     avatarImg: avatar2,
   },
   {
-    text: "“The user interface is so intuitive and easy to use, it has saved us countless hours”",
+    text: "&ldquo;The user interface is so intuitive and easy to use, it has saved us countless hours&rdquo;",  // Escaped quotes
     name: "Alisa Hester",
     title: "Product @ Innovate",
     avatarImg: avatar3,
   },
   {
-    text: "“Our team's productivity has increased significantly since we started using this tool”",
+    text: "&ldquo;Our team's productivity has increased significantly since we started using this tool&rdquo;",  // Escaped quotes
     name: "Alec Whitten",
     title: "CTO @ Tech Solutions",
     avatarImg: avatar4,
   },
 ];
+
 
 export const Testimonials = () => {
   return (
