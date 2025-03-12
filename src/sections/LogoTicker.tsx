@@ -19,9 +19,10 @@ export const LogoTicker = () => {
   return (
     <div className="bg-black text-white py-[72px]">
       <div className="container text-center">
-        <h2 className="text-center text-xl pt-5 text-white/70">
-          Trusted by the world&apos;s most innovative teams
-        </h2>
+      <h2 className="text-center text-xl pt-5 text-white/70">
+  Trusted by the world&#39;s most innovative teams
+</h2>
+
         <div className="overflow-hidden mt-9">
           <div className="flex gap-16 justify-center">
             {images.map(({ src, alt }, index) => (
@@ -40,5 +41,3 @@ export const LogoTicker = () => {
     </div>
   );
 };
-
-

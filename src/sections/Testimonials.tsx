@@ -6,25 +6,25 @@ import avatar4 from "@/assets/avatar-4.png";
 
 const testimonials = [
   {
-    text: "&ldquo;This product has completely transformed how I manage my projects and deadlines&rdquo;",
+    text: "“This product has completely transformed how I manage my projects and deadlines”", // Use normal quotes
     name: "Sophia Perez",
     title: "Director @ Quantum",
     avatarImg: avatar1,
   },
   {
-    text: "&ldquo;These AI tools have completely revolutionized our SEO entire strategy overnight&rdquo;",
+    text: "“These AI tools have completely revolutionized our SEO entire strategy overnight”", // Use normal quotes
     name: "Jamie Lee",
     title: "Founder @ Pulse",
     avatarImg: avatar2,
   },
   {
-    text: "&ldquo;The user interface is so intuitive and easy to use, it has saved us countless hours&rdquo;",
+    text: "“The user interface is so intuitive and easy to use, it has saved us countless hours”", // Use normal quotes
     name: "Alisa Hester",
     title: "Product @ Innovate",
     avatarImg: avatar3,
   },
   {
-    text: "&ldquo;Our team's productivity has increased significantly since we started using this tool&rdquo;",
+    text: "“Our team's productivity has increased significantly since we started using this tool”", // Use normal quotes
     name: "Alec Whitten",
     title: "CTO @ Tech Solutions",
     avatarImg: avatar4,
