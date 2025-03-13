@@ -1,21 +1,20 @@
 import mongoose from "mongoose";
 
-const connection = { isConnected: 0 };
+const connection = { isConnected: false };
 
-async function connect() {
+export async function connect() {
     if (connection.isConnected) {
         console.log("✅ Using existing MongoDB connection");
         return;
     }
 
     if (!process.env.MONGODB_URI) {
-        throw new Error("❌ MONGODB_URI is not defined in .env file");
+        throw new Error("❌ MONGODB_URI is missing from environment variables.");
     }
 
     try {
         const db = await mongoose.connect(process.env.MONGODB_URI, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
+            dbName: "yourDatabaseName", // ✅ Ensure this matches your actual database name
         });
 
         connection.isConnected = db.connections[0].readyState;
@@ -26,15 +25,13 @@ async function connect() {
     }
 }
 
-async function disconnect() {
+export async function disconnect() {
     if (connection.isConnected && process.env.NODE_ENV === "production") {
         await mongoose.disconnect();
-        connection.isConnected = 0;
+        connection.isConnected = false;
         console.log("✅ Disconnected from MongoDB (Production)");
-    } else {
-        console.log("⚠️ Skipping disconnect in development mode");
     }
 }
 
-const db = { connect, disconnect };
-export default db;
+export default { connect, disconnect };
+
